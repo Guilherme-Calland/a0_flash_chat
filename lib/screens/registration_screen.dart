@@ -10,11 +10,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text(
-        'Registration Screen',
-        style: TextStyle(
-          fontSize: 25
-        )
+      body: Center(
+        child: Text(
+          'Registration Screen',
+          style: TextStyle(
+            fontSize: 25
+          )
+        ),
       )
     );
   }

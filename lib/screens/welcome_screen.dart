@@ -10,11 +10,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text(
-        'Welcome Screen',
-        style: TextStyle(
-          fontSize: 25
-        )
+      body: Center(
+        child: Text(
+          'Welcome Screen',
+          style: TextStyle(
+            fontSize: 25
+          )
+        ),
       )
     );
   }

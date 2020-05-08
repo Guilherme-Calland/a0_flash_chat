@@ -10,11 +10,13 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text(
-        'Chat Screen',
-        style: TextStyle(
-          fontSize: 25
-        )
+      body: Center(
+        child: Text(
+          'Chat Screen',
+          style: TextStyle(
+            fontSize: 25
+          )
+        ),
       )
     );
   }
