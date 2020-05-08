@@ -1,3 +1,7 @@
+import 'package:a0_flash_chat/screens/chat_screen.dart';
+import 'package:a0_flash_chat/screens/login_screen.dart';
+import 'package:a0_flash_chat/screens/registration_screen.dart';
+import 'package:a0_flash_chat/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -10,15 +14,15 @@ void main(){
 class FlashChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          'Welcome to Flash Chat',
-          style: TextStyle(
-            fontSize: 25
-          )
-        ),
-      )
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: 'welcome_screen',
+      routes: {
+        'welcome_screen' : (context) => WelcomeScreen(),
+        'registration_screen' : (context) => RegistrationScreen(),
+        'login_screen' : (context) => LoginScreen(),
+        'chat_screen' : (context) => ChatScreen(),
+      },
     );
   }
 }
