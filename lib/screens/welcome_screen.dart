@@ -20,7 +20,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff313131),
+      backgroundColor: flashChatBackGroundColor,
       body: Padding(
         padding: EdgeInsets.all(32),
         child: Column(
@@ -50,7 +50,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 text: 'Log in',
                 color: Colors.green,
                 onPressed: (){
-                  Navigator.pushNamed(
+                  Navigator.popAndPushNamed(
                     context, 
                     'login_screen'
                   );
@@ -66,7 +66,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 text: 'Register',
                 color: Colors.blue,
                 onPressed: (){
-                  Navigator.pushNamed(
+                  Navigator.popAndPushNamed(
                     context,
                     'registration_screen'
                   );
